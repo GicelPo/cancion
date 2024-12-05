@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body onscroll="scrolling()">
+
+<section id="sec1">
+
+   <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Qo5bxJg3vpY?si=xldFEYKIu3KypMiO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+    <h1> <span>Que<br> </span><span>Pase El Mundo</span></h1>
+
+
+
+    <svg version="1.1" id="vector" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
+
+    <path id="trazo" d="M5.67,110c0,0,45-143,196-80C309.02,74.79,386.55,57.92,422.4,44.42c23.39-8.81,48.98-10.38,73.21-4.25
+	c42.3,10.7,104.77,51.76,76.96,120.44c-3.3,8.15-5.71,22-5.67,30.78c0.21,38.9-40.79,61.92-184.94,73.55
+	c-9.04,0.73-18.08-1.28-25.98-5.72c-22.33-12.56-76.2-34.6-128.31,6.78c-68,54-191.93-3.64-190,0c24.33,46-67,56,8,128
+	C97.88,444.12,71.1,503.93,50,535.66c-11.12,16.72-10.24,38.83,2.68,54.22c22.61,26.93,64.96,55.02,129.99,13.13
+	c85.6-55.15,163.08-21.54,187.81-7.93c4.71,2.59,8.88,6.03,12.4,10.1c12.2,14.12,48.56,49.98,102.16,47.74
+	c15.83-0.66,29.62-4.51,40.96-9.31c26.6-11.26,57.05,4.32,62.59,32.67c0.18,0.92,0.35,1.86,0.5,2.81
+	c5.48,34.05-33.19,50.11-37.41,89.93c-2.7,25.43,8.24,47.34,17,61"/>
+
+
+    </svg>
+
+</section>
+
+<section id="sec2">
+
+
+
+    <h1> Letra</h1>
+
+
+    <div id="tex">
+
+
+        <button >
+            <a href="https://directorcreativo.pro/acorde/que-pase-el-mundo" target="_blank"> Acordes</a>
+        </button>
+
+
+
+        <div class="let">
+
+
+
+<p>Pasa el tiempo aquí,
+    mas mi espíritu se encuentra quieto en ti
+    Mi amiga ansiedad
+    se ha quedado afuera
+    y no nos vemos más</p>
+
+    <div>
+     <h3>Precoro</h3>
+
+     <p>
+       
+Desde el día 
+que, buscando, 
+fui encontrado por tu amor,
+ya no hay duda, no hay vacío
+en mi interior
+
+     </p>
+    </div>
+
+    <div>
+
+     <h3>Coro</h3>
+
+     <p>
+
+        Que pase el mundo
+con sus años, sus minutos y segundos,
+que la eternidad la pasaremos juntos,
+que mi vida y mi morir se encuentra en ti
+     </p>
+    </div>
+
+    <div>
+        
+     <h3>
+        Puente
+     </h3>
+
+     <p>Sin comparación,
+        no hay nada mejor  
+        que ser hallado aquí,
+        descansando en tu interminable amor,
+        en tu gran amor por mí
+        Los ojos de mi fe
+        me han dejado ver
+        que pase lo que pase,
+        permaneces siempre fiel
+        Dios, tú eres fiel</p>
+
+    </div>
+ <div>
+        <h3>Coro</h3>
+
+        <h3>Coro2</h3>
+
+        <p>Que pase el mundo
+            Que ya nada que en él hay me satisface,
+            El tesoro más hermoso en mi alma yace,
+            Y en sus ojos veo la luz para seguir,
+            para seguir</p>
+        </div>
+
+            <p>Solamente en ti,
+                desde el día 
+                que, buscando, 
+                fui encontrado por tu amor,
+                ya no hay duda, no hay vacío
+                en mi interior</p>
+
+            </div>
+    </div>
+
+
+
+</section>
+
+
+<footer id="fin">
+
+    <div class="red">
+    <h2>Redes Sociales</h2>
+     
+    
+ 
+    <ul>
+        
+         <a href="https://www.instagram.com/majoydan/?hl=es" target="_blank"><img src="img/brand-instagram.svg" alt=""></a>
+         <a href="https://www.tiktok.com/@majoydanoficial" target="_blank"><img src="img/brand-tiktok.svg" alt=""></a>
+         <a href="https://www.youtube.com/channel/UC2U_mdbHaKjJmJtAuQoLVKg" target="_blank"><img src="img/brand-youtube.svg" alt=""></a>
+    
+      
+        </ul>
+
+        
+
+        
+</div>
+
+
+
+</footer>
+
+
+<script>
+
+
+var trazo= document.getElementById("trazo");
+var trazototal= trazo.getTotalLength();
+console.log(trazototal)
+
+function scrolling(){
+     var scrollporcentaje = (document.body.scrollTop + document.documentElement.scrollTop)/(document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+
+trazo.style.strokeDasharray= trazototal; 
+trazo.style.strokeDashoffset=trazototal;
+
+var final=(scrollporcentaje)*trazototal;
+trazo.style.strokeDashoffset=trazototal-final;
+
+}
+
+
+</script>
+
+
+<script>
+
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>
